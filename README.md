@@ -1,13 +1,8 @@
-# 🌾 FarmPredict - AI Crop Recommendation System
+# FarmPredict - AI Crop Recommendation System
 
 ![Python](https://img.shields.io/badge/Python-3.10-blue)
 ![Streamlit](https://img.shields.io/badge/Streamlit-Web%20App-red)
 ![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-ML-orange)
-![License](https://img.shields.io/badge/License-MIT-green)
-
-FarmPredict is an AI-powered Crop Recommendation System that helps farmers choose the most suitable crop based on soil nutrients and environmental conditions.
-
-# FarmPredict - AI Crop Recommendation System
 
 FarmPredict is an AI-powered Crop Recommendation System that helps farmers and agriculture enthusiasts choose the most suitable crop based on soil nutrients and environmental conditions.
 
@@ -17,92 +12,100 @@ The application uses a Machine Learning model and provides crop recommendations 
 
 ## Features
 
- Predicts the most suitable crop
+* Predicts the most suitable crop.
+* Uses 7 important agricultural parameters:
 
- Uses 7 important agricultural parameters
+  * Nitrogen (N)
+  * Phosphorus (P)
+  * Potassium (K)
+  * Temperature
+  * Humidity
+  * pH Value
+  * Rainfall
+* Supports 50+ Indian crops.
+* Displays:
 
-- Nitrogen (N)
-- Phosphorus (P)
-- Potassium (K)
-- Temperature
-- Humidity
-- pH Value
-- Rainfall
-
- Supports 50+ Indian crops
-
- Displays:
-
-- Recommended crop
-- Confidence score
-- Top alternative crops
-- Crop information
-- Growing season
-
- Clean and responsive UI
+  * Recommended crop
+  * Confidence score
+  * Top alternative crops
+  * Crop information
+  * Growing season
+* Clean and responsive user interface.
 
 ---
 
-##  Demo
+## Demo
 
 ### Home Page
 
 Users enter:
 
-- Soil Nitrogen
-- Soil Phosphorus
-- Soil Potassium
-- Temperature
-- Humidity
-- pH value
-- Rainfall
+* Soil Nitrogen
+* Soil Phosphorus
+* Soil Potassium
+* Temperature
+* Humidity
+* pH Value
+* Rainfall
 
 The model instantly predicts the best crop.
 
----
+You can add screenshots here:
+
+```text
+images/
+├── home.png
+└── result.png
+```
 
 ---
 
-##  Tools & Technologies
+## Tools & Technologies
 
-| Category | Technologies Used |
-|----------|-------------------|
-| Programming Language | Python |
-| Machine Learning | Scikit-learn |
-| Web Framework | Streamlit |
-| Data Processing | Pandas, NumPy |
-| Model Storage | Pickle (.pkl) |
-| Dataset Format | CSV |
+| Category                | Technologies Used  |
+| ----------------------- | ------------------ |
+| Programming Language    | Python             |
+| Machine Learning        | Scikit-learn       |
+| Web Framework           | Streamlit          |
+| Data Processing         | Pandas, NumPy      |
+| Model Storage           | Pickle (.pkl)      |
+| Dataset Format          | CSV                |
 | Development Environment | Visual Studio Code |
-| Version Control | Git |
-| Repository Hosting | GitHub |
+| Version Control         | Git                |
+| Repository Hosting      | GitHub             |
 
 ---
 
-## 🔧 Tech Stack
+## Tech Stack
 
 ### Frontend
-- Streamlit
-- HTML
-- CSS
+
+* Streamlit
+* HTML
+* CSS
 
 ### Backend
-- Python
+
+* Python
 
 ### Machine Learning
-- Scikit-learn
-- Random Forest Classifier
+
+* Scikit-learn
+* Random Forest Classifier
 
 ### Data Analysis
-- Pandas
-- NumPy
+
+* Pandas
+* NumPy
 
 ### Model Serialization
-- Pickle
+
+* Pickle
 
 ### Version Control
-- Git
-- GitHub
+
+* Git
+* GitHub
 
 ---
 
@@ -132,92 +135,91 @@ Alternative Crops
 
 ---
 
----
-
-##  Supported Crop Categories
+## Supported Crop Categories
 
 ### Cereals & Staples
 
-- Rice
-- Wheat
-- Maize
-- Sugarcane
-- Cotton
-- Jute
+* Rice
+* Wheat
+* Maize
+* Sugarcane
+* Cotton
+* Jute
 
 ### Millets
 
-- Bajra
-- Jowar
-- Ragi
-- Barley
-- Amaranth
+* Bajra
+* Jowar
+* Ragi
+* Barley
+* Amaranth
 
 ### Pulses
 
-- Chickpea
-- Soybean
-- Mungbean
-- Blackgram
-- Lentil
-- Peas
-- Groundnut
-- Kidney Beans
-- Pigeon Peas
+* Chickpea
+* Soybean
+* Mungbean
+* Blackgram
+* Lentil
+* Peas
+* Groundnut
+* Kidney Beans
+* Pigeon Peas
 
 ### Oilseeds
 
-- Sunflower
-- Mustard
-- Sesame
+* Sunflower
+* Mustard
+* Sesame
 
 ### Fruits
 
-- Banana
-- Mango
-- Apple
-- Grapes
-- Coconut
-- Watermelon
-- Papaya
-- Orange
-- Muskmelon
+* Banana
+* Mango
+* Apple
+* Grapes
+* Coconut
+* Watermelon
+* Papaya
+* Orange
+* Muskmelon
 
 ### Vegetables
 
-- Tomato
-- Potato
-- Onion
-- Brinjal
-- Chilli
-- Okra
-- Cabbage
-- Cauliflower
+* Tomato
+* Potato
+* Onion
+* Brinjal
+* Chilli
+* Okra
+* Cabbage
+* Cauliflower
 
 ### Spices & Plantation Crops
 
-- Turmeric
-- Ginger
-- Cardamom
-- Black Pepper
-- Coffee
+* Turmeric
+* Ginger
+* Cardamom
+* Black Pepper
+* Coffee
 
 ---
 
-##  Project Structure
-```
+## Project Structure
+
+```text
 FarmPredict/
-│── app.py
-│── crop_v2.pkl
-│── data.csv
-│── requirements.txt
+│── app.py                 # Main Streamlit application
+│── crop_v2.pkl            # Trained ML model
+│── data.csv               # Training dataset
+│── requirements.txt       # Project dependencies
 │── .gitignore
 │── README.md
 ```
 
 ---
 
-##  Installation
+## Installation
 
 ### 1. Clone Repository
 
@@ -245,14 +247,14 @@ streamlit run app.py
 
 ---
 
-##  Requirements
+## Requirements
 
-- Python 3.10+
-- Streamlit
-- Scikit-learn
-- Pandas
-- NumPy
-- Joblib
+* Python 3.10+
+* Streamlit
+* Scikit-learn
+* Pandas
+* NumPy
+* Joblib
 
 Install all dependencies:
 
@@ -262,33 +264,33 @@ pip install -r requirements.txt
 
 ---
 
-##  Dataset
+## Dataset
 
 The model uses agricultural data containing:
 
-- Soil Nitrogen (N)
-- Soil Phosphorus (P)
-- Soil Potassium (K)
-- Temperature
-- Humidity
-- pH
-- Rainfall
-- Crop Label
+* Soil Nitrogen (N)
+* Soil Phosphorus (P)
+* Soil Potassium (K)
+* Temperature
+* Humidity
+* pH
+* Rainfall
+* Crop Label
 
 ---
 
-##  Future Improvements
+## Future Improvements
 
-- Weather API Integration
-- Fertilizer Recommendation System
-- Soil Image Analysis
-- Disease Detection
-- Multi-language Support
-- Mobile Application
+* Weather API Integration
+* Fertilizer Recommendation System
+* Soil Image Analysis
+* Disease Detection
+* Multi-language Support
+* Mobile Application
 
 ---
 
-##  Disclaimer
+## Disclaimer
 
 This project is developed for educational and research purposes.
 
@@ -296,3 +298,10 @@ The predictions generated by the model should be used as advisory suggestions on
 
 ---
 
+## Author
+
+**Chetan Patil**
+
+Computer Engineering Student
+
+Made with Python, Streamlit and Machine Learning.
