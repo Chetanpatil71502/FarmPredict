@@ -106,7 +106,7 @@ The model instantly predicts the best crop.
 
 ---
 
-## 🏗️ System Architecture
+## System Architecture
 
 ```text
 User Input
