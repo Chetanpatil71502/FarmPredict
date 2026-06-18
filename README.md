@@ -1,49 +1,232 @@
-# 🌾 FarmPredict — AI Crop Recommendation System
+# FarmPredict - AI Crop Recommendation System
 
-A production-ready machine learning web app that recommends the best crop to grow based on soil nutrients and climate conditions. Built with **Streamlit** and a **Random Forest Classifier**.
+FarmPredict is an AI-powered Crop Recommendation System that helps farmers and agriculture enthusiasts choose the most suitable crop based on soil nutrients and environmental conditions.
 
-## ✨ Features
+The application uses a Machine Learning model and provides crop recommendations instantly through a simple and interactive web interface built with Streamlit.
 
-- **50 Indian crops** — cereals, millets, pulses, fruits, vegetables, oilseeds, spices & plantation crops
-- **7 input parameters** — N, P, K (soil nutrients) + Temperature, Humidity, pH, Rainfall
-- **90%+ model accuracy** on test set
-- Confidence score + top-3 alternative crop suggestions
-- Crop reference guide organized by category
-- Clean, professional UI with no raw dataset or technical internals exposed
+---
 
-## 🚀 Quick Start
+## Features
+
+ Predicts the most suitable crop
+
+ Uses 7 important agricultural parameters
+
+- Nitrogen (N)
+- Phosphorus (P)
+- Potassium (K)
+- Temperature
+- Humidity
+- pH Value
+- Rainfall
+
+ Supports 50+ Indian crops
+
+ Displays:
+
+- Recommended crop
+- Confidence score
+- Top alternative crops
+- Crop information
+- Growing season
+
+ Clean and responsive UI
+
+---
+
+##  Demo
+
+### Home Page
+
+Users enter:
+
+- Soil Nitrogen
+- Soil Phosphorus
+- Soil Potassium
+- Temperature
+- Humidity
+- pH value
+- Rainfall
+
+The model instantly predicts the best crop.
+
+---
+
+##  Machine Learning Model
+
+| Feature | Details |
+|--------|---------|
+| Algorithm | Random Forest Classifier |
+| Framework | Scikit-learn |
+| Input Features | 7 |
+| Output | Recommended Crop |
+| Model File | crop_v2.pkl |
+
+---
+
+##  Supported Crop Categories
+
+### Cereals & Staples
+
+- Rice
+- Wheat
+- Maize
+- Sugarcane
+- Cotton
+- Jute
+
+### Millets
+
+- Bajra
+- Jowar
+- Ragi
+- Barley
+- Amaranth
+
+### Pulses
+
+- Chickpea
+- Soybean
+- Mungbean
+- Blackgram
+- Lentil
+- Peas
+- Groundnut
+- Kidney Beans
+- Pigeon Peas
+
+### Oilseeds
+
+- Sunflower
+- Mustard
+- Sesame
+
+### Fruits
+
+- Banana
+- Mango
+- Apple
+- Grapes
+- Coconut
+- Watermelon
+- Papaya
+- Orange
+- Muskmelon
+
+### Vegetables
+
+- Tomato
+- Potato
+- Onion
+- Brinjal
+- Chilli
+- Okra
+- Cabbage
+- Cauliflower
+
+### Spices & Plantation Crops
+
+- Turmeric
+- Ginger
+- Cardamom
+- Black Pepper
+- Coffee
+
+---
+
+##  Project Structure
+```
+FarmPredict/
+│── app.py
+│── crop_v2.pkl
+│── data.csv
+│── requirements.txt
+│── .gitignore
+│── README.md
+```
+
+---
+
+##  Installation
+
+### 1. Clone Repository
+
+```bash
+git clone https://github.com/chetanpatil71502/FarmPredict.git
+```
+
+### 2. Move to Project Folder
+
+```bash
+cd FarmPredict
+```
+
+### 3. Install Dependencies
 
 ```bash
 pip install -r requirements.txt
+```
+
+### 4. Run the Application
+
+```bash
 streamlit run app.py
 ```
 
-## 🌱 Supported Crop Categories
+---
 
-| Category | Crops |
-|---|---|
-| Cereals & Millets | Rice, Wheat, Maize, Bajra, Jowar, Ragi, Barley, Amaranth |
-| Pulses | Chickpea, Soybean, Mungbean, Blackgram, Lentil, Peas, Groundnut, and more |
-| Cash Crops | Sugarcane, Cotton, Jute |
-| Oilseeds | Sunflower, Mustard, Sesame |
-| Fruits | Banana, Mango, Apple, Grapes, Watermelon, Coconut, Papaya, and more |
-| Vegetables | Tomato, Potato, Onion, Chilli, Brinjal, Okra, Cauliflower, Cabbage, and more |
-| Spices & Plantation | Turmeric, Ginger, Cardamom, Pepper, Coffee |
+##  Requirements
 
-## 🧠 Model Details
+- Python 3.10+
+- Streamlit
+- Scikit-learn
+- Pandas
+- NumPy
+- Joblib
 
-- **Algorithm:** Random Forest Classifier (300 estimators)
-- **Features (7):** Nitrogen, Phosphorus, Potassium, Temperature, Humidity, pH, Rainfall
-- **Training set:** 10,000 records (200 per crop, based on ICAR agronomic guidelines)
-- **Test accuracy:** ~91%
+Install all dependencies:
 
-## 📊 Data Sources for Production Upgrade
+```bash
+pip install -r requirements.txt
+```
 
-To upgrade to real government datasets, download from:
-- [ICAR – data.gov.in](https://data.gov.in) — search "soil crop recommendation"
-- [Kaggle Crop Recommendation Dataset](https://www.kaggle.com/datasets/atharvaingle/crop-recommendation-dataset)
-- [FAO GAEZ India Crop Suitability](https://gaez.fao.org)
+---
 
-## ⚠️ Disclaimer
+##  Dataset
 
-This tool is for educational and advisory purposes. Always validate recommendations with a local agronomist or Krishi Vigyan Kendra (KVK) before sowing.
+The model uses agricultural data containing:
+
+- Soil Nitrogen (N)
+- Soil Phosphorus (P)
+- Soil Potassium (K)
+- Temperature
+- Humidity
+- pH
+- Rainfall
+- Crop Label
+
+---
+
+##  Future Improvements
+
+- Weather API Integration
+- Fertilizer Recommendation System
+- Soil Image Analysis
+- Disease Detection
+- Multi-language Support
+- Mobile Application
+
+---
+
+##  Disclaimer
+
+This project is developed for educational and research purposes.
+
+The predictions generated by the model should be used as advisory suggestions only. Farmers are encouraged to consult agricultural experts before making farming decisions.
+
+---
+
+
+Computer Engineering Student
+
+Made with ❤️ using Python, Streamlit and Machine Learning.
